@@ -1,4 +1,4 @@
-'''
+
 #6
 a=(10,20,30)
 b=(40,50,60)
@@ -20,15 +20,36 @@ def listt():
 listt()
 
 
+#2
+n = int(input("Enter number of values: "))
+a = []
+even = 0
+odd = 0
+for i in range(n):
+    num = int(input("Enter number: "))
+    a.append(num)
+    if num % 2 == 0:
+        even += 1
+    else:
+        odd += 1
+print("Even:", even)
+print("Odd:", odd)
+
+
+
+
 
 #3
-a = ["Arun", "Ravi", "Kumar"]
-name = input("Enter name: ")
-result = ["Not Found", "Found"]
-a.append(result[name in a])
-print("List:", a)
-
-
+names = []
+n = int(input("Enter number of students: "))
+for i in range(n):
+    name = input("Enter student name: ")
+    names.append(name)
+search = input("Enter name to search: ")
+if search in names:
+    print("Name Found")
+else:
+    print("Name Not Found")
 
 
 
@@ -44,18 +65,34 @@ print(a)
 
 
 #5
-a = (10, 20, 30, 40, 50)
-print("Maximum:", max(a))
-print("Minimum:", min(a))
+a = (10, 20, 5, 30)
+big = a[0]
+small = a[0]
+for n in a:
+    if n > big:
+        big = n
+    if n < small:
+        small = n
+print("Maximum:", big)
+print("Minimum:", small)
+
+
+#7
+name = input("Enter name: ")
+roll = input("Enter roll number: ")
+dept = input("Enter department: ")
+marks = int(input("Enter marks: "))
+
+student = (name, roll, dept, marks)
+
+print("Student Details:", student)
 '''
-
-
-
+'''
 #8
 a = {10, 20, 30}
 b = {30, 40, 50}
 c = a.union(b)
-print("Union:", c)
+print("Union:",c)
 
 
 #9
@@ -87,7 +124,7 @@ def greet():
     b=input("Enter a employee name:")
     c=input("Enter a employee designation:")
     d=input("Enter a employee salary:")
-    print(f"employee ID:{a}  employee name:{b}  employee designation:{c} employee salary")
+    print(f"employee ID:{a}  employee name:{b}  employee designation:{c} employee salary{d}")
 greet()
 
 
@@ -98,17 +135,4 @@ def listt():
     name = input("Enter product name: ")
     print("Price:", a.get(name, "Product not found"))
 listt()
-
-
-
-
-
-
-
-
-
-
-
-
-
 
