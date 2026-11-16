@@ -1,4 +1,4 @@
-'''
+
 #1
 name=(input("enter your name"))
 print ("welcome",name)
@@ -25,6 +25,8 @@ print("total",total)
 km= float(input("enter distance in kilometer km:"))
 miles=km * 0.621371
 print("distance in miles",miles)
+
+
 
 
 #6
@@ -68,7 +70,7 @@ print("total marks",total)
 print("average mark",average)
 
 
-'''
+
 
 #10
 a = int(input("Enter first number: "))
@@ -96,6 +98,17 @@ if num % 2 == 0:
     print("Even number")
 else:
     print("Odd number")
+
+#14
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+print("Equal:", a == b)
+print("Not Equal:", a != b)
+print("Greater than:", a > b)
+print("Less than:", a < b)
+print("Greater than or Equal:", a >= b)
+print("Less than or Equal:", a <= b)
 
 
 
